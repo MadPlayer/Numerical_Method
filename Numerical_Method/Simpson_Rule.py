@@ -1,3 +1,7 @@
+"""
+author: madplayer
+e_mail: kch9001@gmail.com
+"""
 import numpy as np
 
 def Integration(y, x):
