@@ -12,7 +12,7 @@ def Integration(y, x):
     """
     size = len(x)
     j = 0
-    h = (x[2] - x[0])/2
+    h = x[1] - x[0]
 
     if (size - 1) % 2 != 0:
         ans = np.zeros(int(size / 2)-1)
