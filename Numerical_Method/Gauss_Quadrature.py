@@ -27,7 +27,7 @@ def Quadrature(func, x):
         a = x[n]
         b = x[n + 1]
         ans[n + 1] += ans[n]
-        tmp = func((a + b)/2 + (b - a)/2 * _t) * _C
+        tmp = func((a + b)/2 + (b - a)/2 * _t) * _C * (b - a) / 2
         for i in tmp:
             ans[n + 1] += i
     return ans
