@@ -24,7 +24,7 @@ def Integration(y, x):
             j += 1
         ans[j] += 3*h/ 8 * \
                 (y[size-1] + 4*y[size-2] + 4*y[size-3] + y[size-4])
-        ans_x[j] = x[size - 3]
+        ans_x[j] = x[size - 1]
     else:
         ans = np.zeros(int(size / 2) + 1)
         ans_x = np.zeros(int(size / 2) + 1)
