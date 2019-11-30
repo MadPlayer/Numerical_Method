@@ -18,16 +18,15 @@ _t = np.array([_t0, _t1, _t2, -_t1, -_t0]);
 def Quadrature(func, x):
     """
     func = def func(x)
-    x = numpy.arange(s, e, term)
+    x is array
     """
-    
     size = len(x)
     ans = np.zeros(size)
     for n in range(size - 1):
         a = x[n]
         b = x[n + 1]
-        ans[n + 1] += ans[n]
         tmp = func((a + b)/2 + (b - a)/2 * _t) * _C * (b - a) / 2
-        for i in tmp:
-            ans[n + 1] += i
+        ans[n] += np.sum(tmp)
+        ans[n + 1] += ans[n]
+    ans[size -1] = ans[size - 2]
     return ans

@@ -1,7 +1,3 @@
-"""
-author: madplayer
-e_mail: kch9001@gmail.com
-"""
 import numpy as np
 
 def Integration(y, x):
@@ -34,5 +30,6 @@ def Integration(y, x):
             ans_x[j] = x[i]
             j += 1
             ans_x[j] = x[size - 1]
+        ans_x[j] = x[size - 1]
 
     return ans, ans_x
