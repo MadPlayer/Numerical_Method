@@ -1,6 +1,5 @@
----
-integration: https://madplayer.github.io
----
 # Numerical Methods by using Python3
 
-- Integration : {{ page.integration }}
+- [Integration][Integration link]
+
+[Integration link]: https://madplayer.github.io
