@@ -8,7 +8,7 @@ def Integration(y, x):
     """
     y is value list
     y = f(x)
-    x[i + 2] - x[i] = const
+    x[i + 1] - x[i] = const
     """
     size = len(x)
     j = 0
