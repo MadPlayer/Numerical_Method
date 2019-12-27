@@ -2,4 +2,4 @@
 
 - [Integration][Integration link]
 
-[Integration link]: https://madplayer.github.io
+[Integration link]: https://madplayer.github.io/python/2019/11/30/Integration.html
